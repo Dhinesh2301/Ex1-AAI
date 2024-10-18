@@ -56,7 +56,8 @@ print(df)
 def probs(data, child, parent1=None, parent2=None):
     if parent1==None:
         # Calculate probabilities
-        prob=pd.crosstab(data[child], 'Empty', margins=False, normalize='columns').sort_index().to_numpy().reshape(-1).tolist()
+        prob=pd.crosstab(data[child], 'Empty', margins=False, normalize='columns').
+sort_index().to_numpy().reshape(-1).tolist()
     elif parent1!=None:
             # Check if child node has 1 parent or 2 parents
             if parent2==None:
